@@ -1,0 +1,11 @@
+Our project is based on the [fairseq] project: https://github.com/facebookresearch/fairseq
+(If you want to know the details, please get familar with the fairseq project first)
+
+The detaied training procedure is:
+1. Train en2de baseline model with six layers [train_fairseq_e2d.sh]
+2. Train first several steps of the deep en2de model with eight layers [train_fairseq_e2d_deep.sh]
+	a. For example, train only 10 steps.
+3. Prepare the deep en2de model [build_initial_ckpt_for_deep.sh]
+	a. Initialize the deep model with the parameters from the baseline model
+4. Train en2de deep model with eight layers [train_fairseq_e2d_deep.sh]
+	a. From initialized model on step 3
