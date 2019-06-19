@@ -1,14 +1,14 @@
 # Depth Growing for Neural Machine Translation
 This repository is the code for ACL 2019 short paper: Depth Growing for Neural Machine Translation.
 
-The project is based on the [fairseq]: https://github.com/facebookresearch/fairseq
+The project is based on the [fairseq](https://github.com/facebookresearch/fairseq)
 (Please get familar with the fairseq project first)
 
 
 ```
 @inproceedings{zhu2019soft,
-  title={Soft Contextual Data Augmentation for Neural Machine Translation},
-  author={Zhu, Jinhua and Gao, Fei and Wu, Lijun and Xia, Yingce and Qin, Tao and Zhou, Wengang and Cheng, Xueqi and Liu, Tie-Yan},
+  title={Depth Growing for Neural Machine Translation},
+  author={Wu, Lijun and Wang, Yiren and Xia, Yingce and Tian, Fei and Gao, Fei and Qin, Tao and Lai, Jianhuang and Liu, Tie-Yan},
   booktitle={ACL 2019},
   year={2019}
 }
@@ -45,6 +45,7 @@ build_initial_ckpt_for_deep.sh
 train_fairseq_en2de_deep.sh
 ```
 
+### Inference
 The detailed inference procedure is:
 ```
 bash infer_deepNMT.sh 0 <shallow_model_ckpt_path>  <deep_model_ckpt_path>
