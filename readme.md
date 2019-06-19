@@ -28,14 +28,24 @@ Please refer to [WMT14_EN_DE](https://github.com/pytorch/fairseq/blob/v0.6.0/exa
 
 ### Training
 The detaied training procedure is:
-* Train en2de baseline model with six layers [train_fairseq_e2d.sh]
-* Train first several steps of the deep en2de model with eight layers [train_fairseq_e2d_deep.sh]
-	a. For example, train only 10 steps.
-* Prepare the deep en2de model [build_initial_ckpt_for_deep.sh]
-	a. Initialize the deep model with the parameters from the baseline model
-* Train en2de deep model with eight layers [train_fairseq_e2d_deep.sh]
-	a. From initialized model on step 3
-
+* Train en2de baseline model with six layers 
+```
+train_fairseq_en2de.sh
+```
+* Train first several steps of the deep en2de model with eight layers. For example, train only 10 steps.
+```
+train_fairseq_en2de_deep.sh
+```
+* Prepare the deep en2de model. Initialize the deep model with the parameters from the baseline model in last step.
+```
+build_initial_ckpt_for_deep.sh
+```
+* Train en2de deep model with eight layers.
+```
+train_fairseq_en2de_deep.sh
+```
 
 The detailed inference procedure is:
-1. command: bash infer_deepNMT.sh 0 <shallow_model_ckpt_path>  <deep_model_ckpt_path>
+```
+bash infer_deepNMT.sh 0 <shallow_model_ckpt_path>  <deep_model_ckpt_path>
+```
