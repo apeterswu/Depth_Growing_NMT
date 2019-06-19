@@ -1,12 +1,12 @@
 # Depth Growing for Neural Machine Translation
 This repository is the code for ACL 2019 short paper: Depth Growing for Neural Machine Translation.
 
-The project is based on the [fairseq](https://github.com/facebookresearch/fairseq)
+The project is based on the [fairseq](https://github.com/facebookresearch/fairseq).
 (Please get familar with the fairseq project first)
 
 
 ```
-@inproceedings{zhu2019soft,
+@inproceedings{wu2019depth,
   title={Depth Growing for Neural Machine Translation},
   author={Wu, Lijun and Wang, Yiren and Xia, Yingce and Tian, Fei and Gao, Fei and Qin, Tao and Lai, Jianhuang and Liu, Tie-Yan},
   booktitle={ACL 2019},
