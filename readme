@@ -1,13 +1,39 @@
-Our project is based on the [fairseq] project: https://github.com/facebookresearch/fairseq
-(If you want to know the details, please get familar with the fairseq project first)
+# Depth Growing for Neural Machine Translation
+This repository is the code for ACL 2019 short paper: Depth Growing for Neural Machine Translation.
 
+The project is based on the [fairseq]: https://github.com/facebookresearch/fairseq
+(Please get familar with the fairseq project first)
+
+
+```
+@inproceedings{zhu2019soft,
+  title={Soft Contextual Data Augmentation for Neural Machine Translation},
+  author={Zhu, Jinhua and Gao, Fei and Wu, Lijun and Xia, Yingce and Qin, Tao and Zhou, Wengang and Cheng, Xueqi and Liu, Tie-Yan},
+  booktitle={ACL 2019},
+  year={2019}
+}
+```
+
+
+# Requirements and Installation
+* A [PyTorch installation](http://pytorch.org/)
+And install fairseq with:
+```
+pip install -r ./deepNMT/requirements.txt
+python ./deepNMT/setup.py build develop
+```
+
+### Data
+Please refer to [WMT14_EN_DE](https://github.com/pytorch/fairseq/blob/v0.6.0/examples/translation/prepare-wmt14en2de.sh) for data processing.
+
+### Training
 The detaied training procedure is:
-1. Train en2de baseline model with six layers [train_fairseq_e2d.sh]
-2. Train first several steps of the deep en2de model with eight layers [train_fairseq_e2d_deep.sh]
+* Train en2de baseline model with six layers [train_fairseq_e2d.sh]
+* Train first several steps of the deep en2de model with eight layers [train_fairseq_e2d_deep.sh]
 	a. For example, train only 10 steps.
-3. Prepare the deep en2de model [build_initial_ckpt_for_deep.sh]
+* Prepare the deep en2de model [build_initial_ckpt_for_deep.sh]
 	a. Initialize the deep model with the parameters from the baseline model
-4. Train en2de deep model with eight layers [train_fairseq_e2d_deep.sh]
+* Train en2de deep model with eight layers [train_fairseq_e2d_deep.sh]
 	a. From initialized model on step 3
 
 
