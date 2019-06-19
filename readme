@@ -9,3 +9,7 @@ The detaied training procedure is:
 	a. Initialize the deep model with the parameters from the baseline model
 4. Train en2de deep model with eight layers [train_fairseq_e2d_deep.sh]
 	a. From initialized model on step 3
+
+
+The detailed inference procedure is:
+1. command: bash infer_deepNMT.sh 0 <shallow_model_ckpt_path>  <deep_model_ckpt_path>
