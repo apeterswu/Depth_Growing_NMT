@@ -1,5 +1,5 @@
 # Depth Growing for Neural Machine Translation
-This repository is the code for ACL 2019 short paper: Depth Growing for Neural Machine Translation.
+This repository is the code for paper of ACL 2019: Depth Growing for Neural Machine Translation.
 
 The project is based on the [fairseq](https://github.com/facebookresearch/fairseq).
 (Please get familar with the fairseq project first)
@@ -24,7 +24,7 @@ python ./deepNMT/setup.py build develop
 ```
 
 ### Data
-Please refer to [WMT14_EN_DE](https://github.com/pytorch/fairseq/blob/v0.6.0/examples/translation/prepare-wmt14en2de.sh) for data processing.
+Please refer to [WMT14_En_De](https://github.com/pytorch/fairseq/blob/v0.6.0/examples/translation/prepare-wmt14en2de.sh) for data processing.
 
 ### Training
 The detaied training procedure is:
