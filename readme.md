@@ -1,5 +1,5 @@
 # Depth Growing for Neural Machine Translation
-This repository is the code for shhort paper of ACL 2019: [Depth Growing for Neural Machine Translation](https://arxiv.org/pdf/1907.01968.pdf).
+This repository is the code for short paper of ACL 2019: [Depth Growing for Neural Machine Translation](https://arxiv.org/pdf/1907.01968.pdf).
 
 The project is based on the [fairseq (version 0.5.0)](https://github.com/pytorch/fairseq/tree/v0.5.0).
 (Please get familar with the fairseq project first)
