@@ -16,8 +16,8 @@ The project is based on the [fairseq (version 0.5.0)](https://github.com/pytorch
 
 
 # Requirements and Installation
-* A [PyTorch installation](http://pytorch.org/)
-And install fairseq with:
+* A [PyTorch installation (0.4.0)](http://pytorch.org/)
+and install fairseq with:
 ```
 pip install -r ./deepNMT/requirements.txt
 python ./deepNMT/setup.py build develop
